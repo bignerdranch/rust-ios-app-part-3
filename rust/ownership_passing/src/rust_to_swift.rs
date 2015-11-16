@@ -25,18 +25,18 @@ pub extern fn named_data_new() -> *mut NamedData {
 }
 
 #[no_mangle]
-pub extern fn named_data_destroy(data: *mut NamedData) {
-    let _ = unsafe { Box::from_raw(data) };
+pub unsafe extern fn named_data_destroy(data: *mut NamedData) {
+    let _ = Box::from_raw(data);
 }
 
 #[no_mangle]
-pub extern fn named_data_get_name(named_data: *const NamedData) -> RustByteSlice {
-    let named_data = unsafe { &*named_data };
+pub unsafe extern fn named_data_get_name(named_data: *const NamedData) -> RustByteSlice {
+    let named_data = &*named_data;
     RustByteSlice::from(named_data.name.as_ref())
 }
 
 #[no_mangle]
-pub extern fn named_data_count(named_data: *const NamedData) -> size_t {
-    let named_data = unsafe { &*named_data };
+pub unsafe extern fn named_data_count(named_data: *const NamedData) -> size_t {
+    let named_data = &*named_data;
     named_data.data.len() as size_t
 }
