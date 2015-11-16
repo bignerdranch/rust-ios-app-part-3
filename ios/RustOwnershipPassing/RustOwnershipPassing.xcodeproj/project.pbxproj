@@ -12,13 +12,14 @@
 		5294A11C1BC707BF008F3356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5294A11A1BC707BF008F3356 /* Main.storyboard */; };
 		5294A11E1BC707BF008F3356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5294A11D1BC707BF008F3356 /* Assets.xcassets */; };
 		5294A1211BC707BF008F3356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5294A11F1BC707BF008F3356 /* LaunchScreen.storyboard */; };
-		5294A12D1BC70929008F3356 /* RustNamedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A12C1BC70929008F3356 /* RustNamedData.swift */; settings = {ASSET_TAGS = (); }; };
-		5294A12F1BC70942008F3356 /* RustByteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A12E1BC70942008F3356 /* RustByteSlice.swift */; settings = {ASSET_TAGS = (); }; };
-		5294A1311BC709A1008F3356 /* libownership_passing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5294A1301BC709A1008F3356 /* libownership_passing.a */; settings = {ASSET_TAGS = (); }; };
-		5294A1331BC70A60008F3356 /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A1321BC70A60008F3356 /* SwiftObject.swift */; settings = {ASSET_TAGS = (); }; };
+		5294A12D1BC70929008F3356 /* RustNamedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A12C1BC70929008F3356 /* RustNamedData.swift */; };
+		5294A12F1BC70942008F3356 /* RustByteSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A12E1BC70942008F3356 /* RustByteSlice.swift */; };
+		5294A1311BC709A1008F3356 /* libownership_passing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5294A1301BC709A1008F3356 /* libownership_passing.a */; };
+		5294A1331BC70A60008F3356 /* SwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294A1321BC70A60008F3356 /* SwiftObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5266A08C1BFA5A0B00F504B2 /* ownership_passing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ownership_passing.h; path = ../../rust/ownership_passing/ownership_passing.h; sourceTree = "<group>"; };
 		5294A1131BC707BF008F3356 /* RustOwnershipPassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustOwnershipPassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5294A1161BC707BF008F3356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5294A1181BC707BF008F3356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		5294A10A1BC707BF008F3356 = {
 			isa = PBXGroup;
 			children = (
+				5266A08C1BFA5A0B00F504B2 /* ownership_passing.h */,
 				5294A1301BC709A1008F3356 /* libownership_passing.a */,
 				5294A1151BC707BF008F3356 /* RustOwnershipPassing */,
 				5294A1141BC707BF008F3356 /* Products */,
@@ -311,6 +313,7 @@
 				5294A1271BC707BF008F3356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
